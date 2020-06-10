@@ -20,7 +20,9 @@
     "buildcra": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist && node-sass ./src/styles/index.scss ./dist/styles/index.css"
+    "babel": "NODE_ENV=production babel src/lib --out-dir dist",
+    "sass": "node-sass ./src/styles/index.scss ./dist/styles/index.css",
+    "build": "node ./build.js"
   },
   "eslintConfig": {
     "extends": "react-app"
