@@ -4,6 +4,13 @@
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "author": "Wellington Viveiro <wviveiro@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/wviveiro/ajaxform#README",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wviveiro/ajaxform.git"
+  },
   "files": [
     "dist",
     "README.md"
