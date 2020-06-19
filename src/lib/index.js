@@ -20,8 +20,8 @@ const ajaxform = (args) => {
 
     const createInput = (name, value) => {
         if (Array.isArray(value)) {
-            value.forEach((v2) => {
-                createInput(`${name}[]`, v2);
+            value.forEach((v2, i) => {
+                createInput(`${name}[${i}]`, v2);
             });
         } else if (typeof value === 'object' && value !== null) {
             for (let i in value) {
